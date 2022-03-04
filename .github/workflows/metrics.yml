@@ -1,8 +1,9 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 */12 * * *"}]
-  push:
   workflow_dispatch:
+  schedule:
+    # Runs at every 12AM UTC
+    - cron: "0 0 * * *"
 
 jobs:
   github-metrics:
@@ -21,3 +22,7 @@ jobs:
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_threshold: 0.2%
+          
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
