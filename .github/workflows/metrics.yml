@@ -4,31 +4,17 @@ on:
   schedule: [{cron: "0 0 * * *"}]
 
 jobs:
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: tetra-fox
-          template: classic
-          base: activity, repositories
-          config_animated: yes
-          config_timezone: America/Detroit
-          plugin_activity: no
+          filename: metrics.svg
+          base: activity, community, repositories, metadata
           plugin_languages: yes
-          plugin_languages_colors: github
-          plugin_languages_threshold: 0.2%
-          
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SHOW_OS: false
-          SHOW_COMMIT: false
-          SHOW_TIMEZONE: false
-          SHOW_EDITORS: false
-          SHOW_LANGUAGE_PER_REPO: false
-          SHOW_INFO: false
-          SHOW_LOC_CHART: false
+          plugin_languages_ignored: html, css
+          plugin_lines: yes
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
