@@ -21,8 +21,14 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_threshold: 0.2%
           
-      - uses: athul/waka-readme@master
+      - uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TITLE: true
-          SHOW_TOTAL: true
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHOW_OS: false
+          SHOW_COMMIT: false
+          SHOW_TIMEZONE: false
+          SHOW_EDITORS: false
+          SHOW_LANGUAGE_PER_REPO: false
+          SHOW_INFO: false
+          SHOW_LOC_CHART: false
