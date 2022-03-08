@@ -1,5 +1,6 @@
 name: Metrics
 on:
+  push:
   workflow_dispatch:
   schedule: [{cron: "0 0 * * *"}]
 
@@ -13,6 +14,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
           base: activity, community, repositories, metadata
+          timezone: America/Detroit
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_lines: yes
