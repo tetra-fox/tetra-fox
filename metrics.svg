@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="641" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="630" class="">
     <defs>
         <style/>
     </defs>
@@ -290,23 +290,8 @@
                         <div class="chart-bars horizontal">
                             <div class="entry">
                                 <span class="name">msu-cse232</span>
-                                <div class="bar" style="width: 73.856%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
-                                <span class="value">92%</span>
-                            </div>
-                            <div class="entry">
-                                <span class="name">vxp-server</span>
-                                <div class="bar" style="width: 4.215999999999999%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">5%</span>
-                            </div>
-                            <div class="entry">
-                                <span class="name">VRCMods</span>
-                                <div class="bar" style="width: 1.2960000000000003%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">2%</span>
-                            </div>
-                            <div class="entry">
-                                <span class="name">gibby</span>
-                                <div class="bar" style="width: 0.64%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">1%</span>
+                                <div class="bar" style="width: 80%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                                <span class="value">100%</span>
                             </div>
                         </div>
                     </section>
@@ -315,27 +300,12 @@
                         <div class="chart-bars horizontal">
                             <div class="entry">
                                 <span class="name">C++</span>
-                                <div class="bar" style="width: 73.272%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
-                                <span class="value">92%</span>
-                            </div>
-                            <div class="entry">
-                                <span class="name">Python</span>
-                                <div class="bar" style="width: 4.215999999999999%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">5%</span>
-                            </div>
-                            <div class="entry">
-                                <span class="name">C#</span>
-                                <div class="bar" style="width: 1.2960000000000003%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">2%</span>
-                            </div>
-                            <div class="entry">
-                                <span class="name">Rust</span>
-                                <div class="bar" style="width: 0.64%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                                <span class="value">1%</span>
+                                <div class="bar" style="width: 79.352%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                                <span class="value">99%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">JSON</span>
-                                <div class="bar" style="width: 0.584%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 0.6480000000000001%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">1%</span>
                             </div>
                         </div>
@@ -344,7 +314,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 15 Apr 2022, 00:10:22  with lowlighter/metrics@3.22.0</span>
+                <span>Last updated 16 Apr 2022, 00:10:14  with lowlighter/metrics@3.22.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
