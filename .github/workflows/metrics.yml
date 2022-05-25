@@ -14,7 +14,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
           base: activity, community, repositories, metadata
-          timezone: America/Detroit
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_lines: yes
@@ -27,7 +26,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: other.svg
           base: ""
-          timezone: America/Detroit
           plugin_achievements: yes
 
       - name: Checkout repository
@@ -36,20 +34,22 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
-      - name: Generate snake
+      - name: Generate snek
         uses: Platane/snk/svg-only@v2
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             snake.svg?palette=github-dark
 
-      - name: Commit snake
+      - name: Commit snek
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update snek" -a
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull
+          git add .
+          git commit -m "Update snek"
 
-      - name: Push changes
+      - name: Push snek
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
