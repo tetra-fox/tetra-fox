@@ -1,4 +1,4 @@
-name: Metrics
+name: Update profile
 on:
   workflow_dispatch:
   schedule: [{cron: "0 0 * * *"}]
@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
@@ -19,3 +20,17 @@ jobs:
           plugin_lines: yes
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_achievements: yes
+          plugin_achievements_ignored: gister, follower
+          plugin_achievements_display: compact
+          
+      - name: Generate other
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: other.svg
+          base: ""
+          timezone: America/Detroit
+          plugin_achievements: yes
+          
+
