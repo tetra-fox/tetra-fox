@@ -30,28 +30,29 @@ jobs:
           timezone: America/Detroit
           plugin_achievements: yes
 
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-     - name: Generate snake
-       uses: Platane/snk/svg-only@v2
-       with:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+
+      - name: Generate snake
+        uses: Platane/snk/svg-only@v2
+        with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             snake.svg?palette=github-dark
 
-    - name: Commit snake
-      run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git commit -m "Update snek" -a
+      - name: Commit snake
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update snek" -a
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
       
      
