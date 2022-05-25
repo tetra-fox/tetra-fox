@@ -27,6 +27,8 @@ jobs:
           filename: other.svg
           base: ""
           plugin_achievements: yes
+          plugin_achievements_ignored: gister, follower, inspirer
+          plugin_achievements_limit: 12
 
       - name: Checkout repository
         uses: actions/checkout@v2
