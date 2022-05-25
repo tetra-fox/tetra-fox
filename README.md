@@ -9,27 +9,27 @@
     <summary><b>🛠️ Development Stack</b></summary>
     <table>
       <tr>
-        <th>Category</th>
-        <th>Technologies</th>
+        <th align="right">Category</th>
+        <th align="left">Technologies</th>
       </tr>
       <tr>
-        <td>Core</td>
+        <td align="right">Core</td>
         <td><img src="https://skillicons.dev/icons?i=ts,js,cs,python,cpp,go,rust,nodejs,deno,dotnet,redis" height="35px"/></td>
       </tr>
       <tr>
-        <td>Frontend</td>
+        <td align="right">Frontend</td>
         <td><img src="https://skillicons.dev/icons?i=svelte,html,css,sass" height="35px"/></td>
       </tr>
       <tr>
-        <td>Server</td>
+        <td align="right">Server</td>
         <td><img src="https://skillicons.dev/icons?i=docker,heroku,gcp,grafana,prometheus" height="35px"/></td>
       </tr>
       <tr>
-        <td>Miscellaneous</td>
+        <td align="right">Miscellaneous</td>
         <td><img src="https://skillicons.dev/icons?i=linux,bash,markdown,latex,git,github,powershell,raspberrypi,vscode,visualstudio" height="35px"/></td>
       </tr>
       <tr>
-        <td>Creative</td>
+        <td align="right">Creative</td>
         <td><img src="https://skillicons.dev/icons?i=blender,unity,ae,ps,pr" height="35px"/></td>
       </tr>
     </table>
