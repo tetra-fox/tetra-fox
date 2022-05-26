@@ -14,17 +14,25 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
           committer_message: Update metrics
-          config_display: columns
           base: activity, community, repositories, metadata
           base_indepth: true
           plugin_lines: true
+          plugin_traffic: true
           plugin_languages: true
           plugin_languages_indepth: true
           plugin_languages_ignored: html, css, tex, less, dockerfile, batchfile, makefile, qmake, lex, cmake, shell, gnuplot, visual basic, javascript
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_details: lines, percentage
           plugin_languages_aliases: RenderScript:Rust # why does this happen
           plugin_wakatime: true
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+
+      - name: Generate achievements
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: other.svg
+          committer_message: Update other
+          base: ""
           plugin_achievements: true
           plugin_achievements_ignored: gister, follower, inspirer
           plugin_achievements_limit: 12
