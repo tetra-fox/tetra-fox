@@ -32,6 +32,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: other.svg
           committer_message: Update other
+          config_padding: 0
           base: ""
           plugin_achievements: true
           plugin_achievements_ignored: gister, follower, inspirer
@@ -55,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull
-          git add .
+          git add snake.svg
           git commit -m "Update snek"
 
       - name: Push snek
