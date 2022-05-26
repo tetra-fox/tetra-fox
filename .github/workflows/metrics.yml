@@ -36,7 +36,7 @@ jobs:
           base: ""
           plugin_achievements: true
           plugin_achievements_ignored: gister, follower, inspirer
-          plugin_achievements_limit: 12
+          plugin_achievements_limit: 14
 
       - name: Checkout repository
         uses: actions/checkout@v2
