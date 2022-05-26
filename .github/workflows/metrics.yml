@@ -13,6 +13,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
+          committer_message: Update metrics
           config_display: columns
           base: activity, community, repositories, metadata
           base_indepth: true
