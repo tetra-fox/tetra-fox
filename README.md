@@ -1,4 +1,4 @@
-<img src="/metrics.svg" width="50%"/><img src="/other.svg" width="47%"/>
+<img src="/metrics.svg" width="100%"/>
 
 <div align="center">
   <img src="/snake.svg" width="80%">
