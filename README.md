@@ -14,11 +14,11 @@
       </tr>
       <tr>
         <td align="right">Core</td>
-        <td><img src="https://skillicons.dev/icons?i=ts,js,cs,python,cpp,go,rust,nodejs,deno,dotnet,redis" height="35px"/></td>
+        <td><img src="https://skillicons.dev/icons?i=ts,js,cs,py,cpp,go,rust,nodejs,deno,dotnet,redis" height="35px"/></td>
       </tr>
       <tr>
         <td align="right">Frontend</td>
-        <td><img src="https://skillicons.dev/icons?i=svelte,html,css,sass" height="35px"/></td>
+        <td><img src="https://skillicons.dev/icons?i=svelte,html,css,sass,webpack,jquery" height="35px"/></td>
       </tr>
       <tr>
         <td align="right">Server</td>
@@ -26,11 +26,11 @@
       </tr>
       <tr>
         <td align="right">Miscellaneous</td>
-        <td><img src="https://skillicons.dev/icons?i=linux,bash,markdown,latex,git,github,powershell,raspberrypi,vscode,visualstudio" height="35px"/></td>
+        <td><img src="https://skillicons.dev/icons?i=linux,bash,markdown,latex,regex,git,github,powershell,raspberrypi,vscode,visualstudio" height="35px"/></td>
       </tr>
       <tr>
         <td align="right">Creative</td>
-        <td><img src="https://skillicons.dev/icons?i=blender,unity,ae,ps,pr" height="35px"/></td>
+        <td><img src="https://skillicons.dev/icons?i=blender,unity,ae,ps,pr,ai" height="35px"/></td>
       </tr>
     </table>
   </details>
