@@ -30,7 +30,7 @@
       </tr>
       <tr>
         <td align="right">Creative</td>
-        <td><img src="https://skillicons.dev/icons?i=blender,unity,ae,ps,pr,ai" height="35px"/></td>
+        <td><img src="https://skillicons.dev/icons?i=blender,unity,ableton,ae,au,ps,pr,ai" height="35px"/></td>
       </tr>
     </table>
   </details>
