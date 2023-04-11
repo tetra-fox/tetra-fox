@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Generate metrics
-        uses: lowlighter/metrics@v3.32
+        uses: lowlighter/metrics@v3.33
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
@@ -27,7 +27,7 @@ jobs:
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
 
       - name: Generate achievements
-        uses: lowlighter/metrics@v3.32
+        uses: lowlighter/metrics@v3.33
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: other.svg
