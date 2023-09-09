@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Generate metrics
-        uses: lowlighter/metrics@v3.32
+        uses: lowlighter/metrics@v3.33
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.svg
@@ -27,7 +27,7 @@ jobs:
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
 
       - name: Generate achievements
-        uses: lowlighter/metrics@v3.32
+        uses: lowlighter/metrics@v3.33
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: other.svg
@@ -39,13 +39,13 @@ jobs:
           plugin_achievements_limit: 14
 
       - name: Checkout repository
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4.0.0
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
       - name: Generate snek
-        uses: Platane/snk/svg-only@v2.2.1
+        uses: Platane/snk/svg-only@v3.0.0
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
