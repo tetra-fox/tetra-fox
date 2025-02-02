@@ -1,7 +1,8 @@
-<div align="center">
-    <img src="/metrics.svg" width="40%"/>
-    <img src="/other.svg" width="40%"/>
-</div>
+<p align="center">
+    <img src="/metrics.svg" width="46%"/>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <img src="/other.svg" width="46%"/>
+</p>
 <div align="center">
   <img src="/snake.svg" width="80%">
   </br>
